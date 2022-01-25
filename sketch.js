@@ -8,9 +8,7 @@ var dustbinObj,groundObject
 var world;
 var paperObject,paperObjectimg;
 
-function preload(){
-	paperObjectimg=loadImage("paper.png");
-   }
+
 
 function setup() {
 	createCanvas(1600, 700);
@@ -22,7 +20,7 @@ function setup() {
 	
 	groundObject=new ground(width/2,670,width,20);
 	dustbinObj=new dustbin(1200,650);
-	paperObject=new paper(400,650);
+	paperObject=new paper(400,650,70);
 
 	Engine.run(engine);
   
